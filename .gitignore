@@ -1,0 +1,22 @@
+# Visual Studio y cachés de IDE
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Dependencias
+node_modules/
+
+# Compilación TypeScript
+dist/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Logs y temporales
+*.log
+npm-debug.log*
+yarn-debug.log*
