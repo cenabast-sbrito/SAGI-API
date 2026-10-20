@@ -12,3 +12,14 @@ export interface AlertaResumen {
     AlertasPendientes: number;
     [key: string]: unknown;
 }
+
+export interface AlertaViaje {
+    Rut: number;
+    TNombres: string;
+    TPaterno: string;
+    TMaterno: string;
+    FechaInicio: string | Date;
+    FechaTermino: string | Date;
+    NombreCompleto?: string;
+    [key: string]: unknown;
+}

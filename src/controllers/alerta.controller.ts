@@ -18,3 +18,13 @@ export async function obtenerResumenAlertas(_req: Request, res: Response, next: 
         next(error);
     }
 }
+
+export async function obtenerAlertasViajes(req: Request, res: Response, next: NextFunction): Promise<void> {
+    try {
+        const rango = req.query.rango as string;
+        const viajes = await service.obtenerAlertasViajes(rango);
+        res.status(200).json(viajes);
+    } catch (error) {
+        next(error);
+    }
+}

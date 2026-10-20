@@ -8,3 +8,7 @@ export async function obtenerAlertas(): Promise<Alerta[]> {
 export async function obtenerResumenAlertas(): Promise<AlertaResumen | undefined> {
     return await repository.obtenerResumenAlertas();
 }
+
+export async function obtenerAlertasViajes(rango?: string): Promise<any[]> {
+    return await repository.obtenerAlertasViajes(rango);
+}
