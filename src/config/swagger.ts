@@ -1,3 +1,5 @@
+const basePath = process.env.BASE_PATH || "";
+
 export const swaggerSpec = {
     openapi: "3.0.0",
     info: {
@@ -7,7 +9,7 @@ export const swaggerSpec = {
     },
     servers: [
         {
-            url: "/api/sagi/v1",
+            url: `${basePath}/api/sagi/v1`,
             description: "Servidor API actual (v1)"
         }
     ],
